@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>class</title>
+	<link rel="stylesheet" type="text/css" href="aframe/aframe.js">
+	<script type="text/javascript" src="aframe.js"></script>
+	<script type="text/javascript" src="aframe-enviroment-componenet.min.js"></script>
+  <script type="text/javascript" src="aframe-inspector-min.js"></script>
+  <script type="text/javascript" src="aframe/inspector2.js"></script>
+<script type="text/javascript" src="https://unpkg.com/aframe-environment-component"></script>
+
+
+	<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+</head>
+<body>
+  <a-scene fog="color: black;  density:  0.3;  far:  500;  near:  20" enviroment="preset:forest">
+
+<a-entity light="color:  black;  groundColor:  #f01414;  intensity:  2;  type:  point;  target:a-sphere
+"></a-entity>
+<a-entity
+light="angle:  360;  color:  black;  groundColor:  #f91010;  decay:  0.5;  distance:  40;  intensity:  0.3;  castShadow:  true;  penumbra:  1;  target:  [object HTMLElement]"></a-entity>
+
+
+    <a-assets >
+      <img src="assets/sky1.jpg" id="sky1">
+      <!-- <img src="assets/nm1.tif" id="nm1">
+      <img src="assets/brickt.tif" id="nm2"> -->
+
+    <!--   <img src="texture/earth1.tif" id="nm2">
+      <img src="texture/earth2.tif" id="nm3">
+      <img src="texture/earth3.tif" id="nm4"> -->
+      <img src="assets/textures/normalmap.jpg" id="nm">
+      <img src="assets/skyy.gltf" id="skyy">
+      <img src="img/whitetiles/nm1.tif" id="nm1">
+      <img src="img/whitetiles/nm1b.tif" id="nm2">
+      <img src="img/whitetiles/nm1c.tif" id="nm2">
+
+    </a-assets>
+    <!-- <a-entity gltf-model="#mountain" height="2" width="2" ></a-entity> -->
+   
+
+<a-sky src="img/space4.jpg" fog="true" double-sided="true" side="double"></a-sky>
+
+    <a-plane rotation="-90 0 0" scale="1100 1100 1"  repeat="600 600" src="img/whitetiles/tile1.jpg" src="#nm" normal-map="#nm1"color="white" receive-shadow="true"  opacity="0.965"></a-plane>
+
+<a-box id="p1" src="img/whitetiles/tile1.jpg" scale="100.49883 90.12249 100.64579" material="npot: true; opacity: 0.255; color: #f50a93" geometry="primitive: sphere">
+    
+</a-box>
+
+
+
+<!-- <a-box id=p1 src="img/whitetiles/tile1.jpg" id="#nm3" scale="2 2 2">
+<a-box id="ruler" src="img/whitetiles/tile1.jpg" scale="9.77519 9.80835 2" material="" geometry="primitive: torus">
+    
+</a-box> -->
+
+<!-- <a-box id="ruler" src="img/whitetiles/tile1.jpg" scale="9.77519 9.80835 2" material="" geometry="primitive: torus" rotation="88.81146 -0.01 0" visible="" position="0 1.295 -1.18339">
+    
+</a-box> -->
+
+    PANELS
+
+ <a-box id="panel1" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" visible="" position="-1.872 2.49309 -14.28788" rotation="0 9.803 0" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel2" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -6.80217 0" position="0.974 2.547 -14.3687" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel3" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -15.858999999999998 0" position="3.879 2.493 -13.7669" opacity="0.255">
+    
+</a-box>
+    
+<a-box id="panel4" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -30.217221157404488 0" position="6.65901 2.493 -12.57516" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel5" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -38.788096814766476 0" position="9.11156 2.493 -10.80874" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel6" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity:0.255" geometry="" rotation="0 -50.213448207470215 0" position="11.19839 2.493 -8.80905" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel7" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity: 0.255" geometry="" rotation="-0.91 -71.73546186596933 0" position="12.57907 2.493 -6.14243" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel8" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity:0.255" geometry="" rotation="0 -77.40946291114987 0" position="13.37938 2.50939 -3.42228" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel9" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity:0.255" geometry="" rotation="0 -88.87835909628356 0" position="13.67889 2.493 -0.60285" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel10" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity:0.255" geometry="" rotation="-0.7373966823333694 -104.78997002486165 -0.3626822843178111" position="13.19187 2.61786 2.40489" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel11" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity: 0.255" geometry="" rotation="0 -122.117359665208 0" position="12.0876 2.59373 5.12812" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel12" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity:0.255" geometry="" rotation="0 -134.16608913901408 0" position="10.23317 2.67251 7.48272" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel13" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity:0.255" geometry="" rotation="0 -146.88288740194272 0" position="8.03177 2.70529 9.28724" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel14" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity:0.255" geometry="" rotation="0.09281916281119336 22.355667250414463 0.006302535746439056" position="5.56481 2.68962 10.61842" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel15" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="opacity: 0.255" geometry="" rotation="0 -89.76357888976068 0" position="-13.91983 2.493 -1.45647">
+    
+</a-box>
+
+
+<a-box id="panel16" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -81.01336744252275 0" position="-13.60231 2.493 1.58198" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel17" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -67.77575054382021 0" position="-12.81461 2.493 4.20472" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel18" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -58.422787496104654 0" position="-11.40744 2.493 6.90306" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel19" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -44.77894352065436 0" position="-9.59715 2.493 8.99293" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel20" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -28.70289370487372 0" position="-7.20608 2.493 10.82506" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel21" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -18.0401491374891 0" position="-4.5194 2.493 11.88089" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel22" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0.057295779513082325 -4.678773355038302 -1.1516451682129547" position="-1.69938 2.493 12.5738" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel23" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -172.55769915955003 0" position="0.86322 2.493 12.44823" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel24" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 18.13927083604673 0" position="3.76952 2.493 11.84922" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel25" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -105.02545567866042 0" position="-13.42388 2.493 -4.55102" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel26" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -118.1278545377121 0" position="-12.35819 2.493 -7.27836" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel27" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -126.05472563334703 0" position="-10.64912 2.493 -9.75723" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel28" src="img/whitetiles/tile1.jpg" scale="2.99882 8.9495 0.52463" material="" geometry="" rotation="0 -142.40980589535639 0" position="-8.60902 2.493 -11.90389" opacity="0.255">
+    
+</a-box>
+
+<a-box id="panel29" src="img/whitetiles/tile1.jpg" scale="5.23235 8.9495 0.52463" material="" geometry="" rotation="0 -159.48681297923056 0" position="-5.03291 2.493 -13.5294" opacity="0.255">
+    
+</a-box>
+
+
+
+
+
+
+
+
+
+
+<!-- SECOND FLOOR -->
+<a-plane rotation="-90 0 0" scale="39.13118 39.86099 2" repeat="600 600" src="img/whitetiles/tile1.jpg" normal-map="#nm1" color="white" receive-shadow="true" opacity="0.965" material="color: #7e03e2; opacity: 1" geometry="" id="floor2" position="0 7.54833 -0.20138" visible="false"></a-plane>
+
+<!-- ELEVATOR1 -->
+<a-box id="el1" src="img/whitetiles/tile1.jpg" scale="1.55328 18.08537 1.61188" material="opacity: 0.6; color: #d90af5" geometry="primitive: cylinder" visible="" position="0 3.04636 0" rotation="0 9.803 0" opacity="0.255">
+    
+</a-box>
+
+<a-plane rotation="-90 0 0" scale="2 2 2" repeat="600 600" src="img/whitetiles/tile1.jpg" normal-map="#nm1" color="white" receive-shadow="true" opacity="0.965" material="color: #7e03e2; opacity: 1" geometry="" id="elg1" position="0 0.2 0"></a-plane>
+
+
+
+<!-- FLOOR2 -->
+<a-box id="secondfloor" src="img/whitetiles/tile1.jpg" scale="35.70898 0.82705 35.71904" material="opacity: 0.6; color: #fbd309" geometry="primitive: cylinder" visible="" position="0.38516 7.55234 -1.52827" rotation="0 9.803 0" opacity="0.255">
+    
+</a-box>
+
+<a-box id="divider4" src="img/whitetiles/tile1.jpg" scale="32.10449 13.36783 0.52463" material="opacity: 1; color: #ebeaea" geometry="" rotation="0 0.04640958140559668 0" position="27.05194 14.76949 -0.18894" opacity="0.255">
+    
+</a-box>
+
+<a-box id="divider3" src="img/whitetiles/tile1.jpg" scale="32.46552 13.18657 0.52463" material="opacity: 1; color: #ebeaea" geometry="" rotation="0 -0.21600508876432034 0" position="-26.78451 15.07047 -0.267" opacity="0.255">
+    
+</a-box>
+
+<a-box id="divider2" src="img/whitetiles/tile1.jpg" scale="32.26289 13.22083 0.52463" material="opacity: 1; color: #ebeaea" geometry="" rotation="0 -88.63084132878704 0" position="-0.6095 14.938 -27.94455" opacity="0.255">
+    
+</a-box>
+
+<a-box id="divider1" src="img/whitetiles/tile1.jpg" scale="32.66543 13.58645 0.52463" material="opacity: 1; color: #ebeaea" geometry="" rotation="0 -88.63084132878704 0" position="0.8771 14.64659 26.10929" opacity="0.255">
+    
+</a-box>
+  
+
+
+    
+</a-box>
+
+<a-plane rotation="-90 0 0" scale="2 2 2" repeat="600 600" src="img/whitetiles/tile1.jpg" normal-map="#nm1" color="white" receive-shadow="true" opacity="0.965" material="color: #7e03e2; opacity: 1" geometry="" id="elg1" position="0 0.2 0"></a-plane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <a-box color="" normal-map="#nm" position="-105 7.0044 -60" src="img/pores.jpg" scale="" normal-texture-repeat="3 3" repeat="" roughness="1" side="double" geometry="width: 0.2; height: 15; depth: 110" material="color: #FFF; repeat: 1 1"></a-box>
+
+
+ -->
+<!-- <a-box width="99" height="10" depth="1.5" color="" normal-map="#nm" position="-55 6.89801 -10" src="img/pores.jpg" scale="-1 1 1" normal-texture-repeat="3 3" repeat="2 2" roughness="1" open-sided="true" open-ended="true" side="double" material="color: #FFF" geometry="height: 15" id="wallfront2">
+      
+    </a-box>
+
+    <a-box width="0.2" height="10" depth="120" color="" normal-map="#nm" position="95 4.96422 -60" src="img/pores.jpg" scale="" normal-texture-repeat="3 3" repeat="" roughness="1" side="double" material="color: #FFF; repeat: 1 1" geometry="height: 15" id="wallright"></a-box>
+
+    <a-box width="0.2" height="10" depth="120" color="" normal-map="#nm" position="95 4.96422 -60" src="img/pores.jpg" scale="" normal-texture-repeat="3 3" repeat="" roughness="1" side="double" material="color: #FFF; repeat: 1 1" geometry="height: 15" id="wallright"></a-box>
+
+    <a-box width="90" height="10" depth="1.5" color="" normal-map="#nm" position="50 4.98133 -10" src="img/pores.jpg" scale="-1 1 1" normal-texture-repeat="3 3" repeat="2 2" roughness="1" open-sided="true" open-ended="true" side="double" material="color: #FFF" geometry="height: 15" id="wallftont1">
+      
+    </a-box>
+  <a-box width="0.2" height="10" depth="40" color="" normal-map="#nm" position="-3.98034 0.26917 8.5594" src="img/pores.jpg" scale="" normal-texture-repeat="3 3" repeat="" roughness="1" side="double" material="color: #FFF; repeat: 1 1" geometry=""></a-box>
+
+  <a-box width="200" height="10" depth="1.5" color="" normal-map="#nm" position="-5 4.37587 -120" src="img/pores.jpg" scale="-1 1 1" normal-texture-repeat="3 3" repeat="2 2" roughness="1" open-sided="true" open-ended="true" side="double" material="color: #FFF" geometry="height: 15">
+      
+    </a-box>
+
+
+
+
+ -->
+<!--  <a-box
+
+width="0.2"
+height="10"
+depth="40"
+color=""
+normal-map="#nm"
+position="-5 1.5 -5"
+src="img/pores.jpg"
+normal-map="#nm1"
+scale="1 1"
+normal-texture-repeat="3 3"
+repeat=""
+roughness="1"
+
+side="double"
+    ></a-box> -->
+
+
+
+
+
+
+
+   <!--  <a-box
+color=""
+normal-map="#nm"
+position="-105 1.5 -60"
+src="img/pores.jpg"
+normal-map="#nm1"
+scale="1 1"
+normal-texture-repeat="3 3"
+repeat=""
+roughness="1"
+
+side="double"
+geometry="width:  0.2;  height:  10;  depth:  110"
+    ></a-box> -->
+    <!--  <a-box
+
+width="0.2"
+height="10"
+depth="120"
+color=""
+normal-map="#nm"
+position="95 1.5 -60"
+src="img/pores.jpg"
+normal-map="#nm1"
+scale="1 1"
+normal-texture-repeat="3 3"
+repeat=""
+roughness="1"
+
+side="double"
+    ></a-box> -->
+
+      <!--  <a-box
+
+width="0.2"
+height="10"
+depth="120"
+color=""
+normal-map="#nm"
+position="95 1.5 -60"
+src="img/pores.jpg"
+normal-map="#nm1"
+scale="1 1"
+normal-texture-repeat="3 3"
+repeat=""
+roughness="1"
+
+side="double"
+    ></a-box>  -->
+
+    <!-- <a-box
+
+width="200"
+height="10"
+depth="1.5"
+color=""
+normal-map="#nm"
+position="-5 1.5 -120"
+src="img/pores.jpg"
+normal-map="#nm1"
+normal-map="#nm3"
+normal-map="#nm4"
+normal-map="#nm5"
+normal-map="#nm2"
+scale="-1 1"
+normal-texture-repeat="3 3"
+repeat="2 2"
+roughness="1"
+open-sided="true"
+open-ended="true"
+
+side="double"
+    >
+      
+    </a-box>
+
+     <a-box
+
+width="90"
+height="10"
+depth="1.5"
+color=""
+normal-map="#nm"
+position="50 1.5 -10"
+src="img/pores.jpg"
+normal-map="#nm1"
+normal-map="#nm3"
+normal-map="#nm4"
+normal-map="#nm5"
+normal-map="#nm2"
+scale="-1 1"
+normal-texture-repeat="3 3"
+repeat="2 2"
+roughness="1"
+open-sided="true"
+open-ended="true"
+
+side="double"
+    >
+      
+    </a-box>
+
+
+ <a-box
+
+width="99"
+height="10"
+depth="1.5"
+color=""
+normal-map="#nm"
+position="-55 1.5 -10"
+src="img/pores.jpg"
+normal-map="#nm1"
+normal-map="#nm3"
+normal-map="#nm4"
+normal-map="#nm5"
+normal-map="#nm2"
+scale="-1 1"
+normal-texture-repeat="3 3"
+repeat="2 2"
+roughness="1"
+open-sided="true"
+open-ended="true"
+
+side="double"
+    > -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  -->
+
+    <!-- <a-entity src="assets/mountains.zip"></a-entity> -->
+
+    <a-entity position="0 8.7 4" >
+
+      <a-camera user-height="7"></a-camera>
+      
+    </a-entity>
+
+    <a-entity light="type: ambient; color: transparent;"></a-entity>
+    <!-- <a-entity light="type: spot; color: red" position="-8 8 2" distance="2"></a-entity> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</a-scene>
+
+</body>
+</html>
